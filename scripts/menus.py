@@ -22,13 +22,13 @@ def central():
         sel = input()
 
         if sel=='1':
-            if path.exists(endereco('data/csv/deferidas.csv')) and path.getsize(endereco('data/csv/deferidas.csv')) > 0:
+            if path.exists(endereco('data/csv/deferidas.csv')) and path.getsize(endereco('data/csv/deferidas.csv')) > 1:
                 df_deferidas, df_changed, df_nomeras = load_dfs(df_deferidas, df_changed, df_nomeras)
                 menu_colRa(df_deferidas, df_nomeras)
             else:
                 print('Importe o pdf de matriculas!')
         elif sel=='2':
-            if path.exists(endereco('data/csv/deferidas.csv')) and path.getsize(endereco('data/csv/deferidas.csv')) > 0:
+            if path.exists(endereco('data/csv/deferidas.csv')) and path.getsize(endereco('data/csv/deferidas.csv')) > 1:
                 df_deferidas, df_changed, df_nomeras = load_dfs(df_deferidas, df_changed, df_nomeras)
                 menu_colCod(df_deferidas, df_nomeras)
             else:
