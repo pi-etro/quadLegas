@@ -56,7 +56,7 @@ And run with:
 ```
 
 ### Others
-I haven't tested quadLegas on other OS, but if you manage to install the Python libraries mentioned, you should be able to run it.
+I haven't tested quadLegas on other OS, but if you manage to install the Python libraries mentioned you should be able to run it.
 
 ## License
 [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html)
