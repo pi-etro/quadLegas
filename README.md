@@ -7,9 +7,9 @@
     <a href="https://www.gnu.org/licenses/gpl-3.0.html" alt="GPLv3">
         <img src="https://img.shields.io/badge/License-GPLv3-CB0000.svg" /></a>
 </p>
-
-quadLegas is a CLI Python application for UFABC students who want to find out who their new classmates are!
-
+<p align="center">
+quadLegas is a CLI Python application to find out your new UFABC classmates!
+</p>
 <p align="center">
   <img width="650" src="https://raw.githubusercontent.com/pi-etro/quadLegas/master/img/menu.gif">
 </p>
