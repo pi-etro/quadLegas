@@ -19,8 +19,8 @@ quadLegas is a CLI Python application to find out your new UFABC classmates!
 
 With quadLegas you can:
 * Generate a *csv* file with the names of all your classmates;
-* Generate a *csv* file with the names of all students in a class.
-* Import the enrollment document (example [here](http://prograd.ufabc.edu.br/pdf/_matriculas_deferidas_pos_ajuste_2019_3.pdf));
+* Generate a *csv* file with the names of all students in a class;
+* Import the enrollment document.
 
 ## Table of Contents
 
@@ -71,6 +71,13 @@ I haven't tested quadLegas on other OS, but if you manage to install the Python 
 
 ## Usage
 
+First import the registration document (example [here](http://prograd.ufabc.edu.br/pdf/_matriculas_deferidas_pos_ajuste_2019_3.pdf)) in the menu option `3`. This may take some time.
+
+After importing the document you can select option `1` to list all students who are in the same classes as you - enter your university ID (RA) and the path to the *csv* file (`/path/to/file.csv`) - or option `2` to list all students from one or more classes - enter the number of classes to consult, the code for each class and the path to the *csv* file.
+
+In the output *csv* file, each column is a class with the class code as header, each row has the students' name or the university ID (RA) - in case quadLegas doesn't know the name associated with the ID.
+
+Enter `0` any time to return to the menu and, in the menu, enter `4` to exit.
 
 ## About
 
