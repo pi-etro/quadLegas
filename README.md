@@ -67,13 +67,14 @@ And run with:
 ```
 
 ### Others
-I haven't tested quadLegas on other OS, but if you manage to install the Python libraries mentioned you should be able to run it.
+I haven't tested quadLegas on other OS, but if you manage to install the Python libraries [mentioned](#Installation) you should be able to run it.
 
 ## Usage
 
 
 ## About
 
+This project was done as a Python programming practice and for no other purpose, so it is not optimized and may present errors. You are welcome to contribute!
 
 ## License
 [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html)
