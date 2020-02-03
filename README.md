@@ -10,9 +10,6 @@
 <p align="center">
 quadLegas is a CLI Python application to find out your new UFABC classmates!
 </p>
-<p align="center">
-  <img width="650" src="https://raw.githubusercontent.com/pi-etro/quadLegas/master/img/menu.gif">
-</p>
 
 ## Table of Contents
 
