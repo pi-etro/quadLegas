@@ -4,5 +4,9 @@
 
 ## Usage
 
+<p align="center">
+  <img width="650" src="https://raw.githubusercontent.com/pi-etro/quadLegas/master/img/menu.gif">
+</p>
+
 ## License
 [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html)
