@@ -12,6 +12,8 @@ quadLegas is a CLI Python application for UFABC students who want to find out wh
 
 * [Features](#Features)
 * [Installation](#Installation)
+  * [Linux](#Linux)
+  * [Others](#Others)
 * [Usage](#Usage)
 * [About](#About)
 * [License](#License)
