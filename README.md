@@ -4,6 +4,10 @@
 
 quadLegas is a CLI Python application for UFABC students who want to find out who their new classmates are!
 
+<p align="center">
+  <img width="650" src="https://raw.githubusercontent.com/pi-etro/quadLegas/master/img/menu.gif">
+</p>
+
 ## Functionalities
 
 With quadLegas you can:
@@ -13,9 +17,7 @@ With quadLegas you can:
 
 ## Usage
 
-<p align="center">
-  <img width="650" src="https://raw.githubusercontent.com/pi-etro/quadLegas/master/img/menu.gif">
-</p>
+
 
 ## Installation
 
