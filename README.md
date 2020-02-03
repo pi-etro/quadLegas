@@ -11,22 +11,25 @@
 quadLegas is a CLI Python application to find out your new UFABC classmates!
 </p>
 
+## Features
+
+<p align="center">
+  <img width="660" src="https://raw.githubusercontent.com/pi-etro/quadLegas/master/img/main_menu.gif">
+</p>
+
+With quadLegas you can:
+* Generate a *csv* file with the names of all your classmates;
+* Generate a *csv* file with the names of all students in a class.
+* Import the enrollment document (example [here](http://prograd.ufabc.edu.br/pdf/_matriculas_deferidas_pos_ajuste_2019_3.pdf));
+
 ## Table of Contents
 
-* [Features](#Features)
 * [Installation](#Installation)
   * [Linux](#Linux)
   * [Others](#Others)
 * [Usage](#Usage)
 * [About](#About)
 * [License](#License)
-
-## Features
-
-With quadLegas you can:
-* Import the enrollment document (example [here](http://prograd.ufabc.edu.br/pdf/_matriculas_deferidas_pos_ajuste_2019_3.pdf));
-* Generate a *csv* file with the names of all your classmates;
-* Generate a *csv* file with the names of all students in a class.
 
 ## Installation
 
