@@ -1,10 +1,12 @@
-<h1 align="center">
-  <br>
-  <a><img src="https://raw.githubusercontent.com/pi-etro/quadLegas/master/img/quadLegas.png" alt="quadLegas" width="598"></a>
-  <br>
-</h1>
-
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-3572A5.svg)](https://www.python.org/) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-CB0000.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
+<p align="center">
+    <img src="https://raw.githubusercontent.com/pi-etro/quadLegas/master/img/quadLegas.png" width="598">
+</p>
+<p align="center">
+    <a href="https://www.python.org/" alt="Made with Python">
+        <img src="https://img.shields.io/badge/Made%20with-Python-3572A5.svg" /></a>
+    <a href="https://www.gnu.org/licenses/gpl-3.0.html" alt="GPLv3">
+        <img src="https://img.shields.io/badge/License-GPLv3-CB0000.svg" /></a>
+</p>
 
 quadLegas is a CLI Python application for UFABC students who want to find out who their new classmates are!
 
