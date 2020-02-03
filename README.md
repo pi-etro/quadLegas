@@ -16,7 +16,6 @@ quadLegas is a CLI Python application to find out your new UFABC classmates!
 <p align="center">
   <img width="660" src="https://raw.githubusercontent.com/pi-etro/quadLegas/master/img/main_menu.gif">
 </p>
-
 With quadLegas you can:
 * Generate a *csv* file with the names of all your classmates;
 * Generate a *csv* file with the names of all students in a class.
@@ -55,10 +54,7 @@ And run with:
 #### Source code
 If you don't want the standalone version, install the libraries mentioned. You can install them with pip3:
 ```bash
-pip3 install colorama
-pip3 install cryptography
-pip3 install pandas
-pip3 install tabula-py
+pip3 install colorama cryptography pandas tabula-py
 ```
 Download the source code [here](https://github.com/pi-etro/quadLegas/archive/master.zip) and extract it. In the extrated folder use:
 ```bash
