@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/pi-etro/quadLegas"><img src="https://raw.githubusercontent.com/pi-etro/quadLegas/master/img/quadLegas.png" alt="quadLegas" width="598"></a>
+  <a><img src="https://raw.githubusercontent.com/pi-etro/quadLegas/master/img/quadLegas.png" alt="quadLegas" width="598"></a>
   <br>
 </h1>
 
