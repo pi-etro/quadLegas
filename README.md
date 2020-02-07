@@ -55,7 +55,7 @@ If you don't want the standalone version, install the libraries [mentioned](#Ins
 ```bash
 pip3 install colorama cryptography pandas
 ```
-Download the source code [here](https://github.com/pi-etro/quadLegas/archive/v1.0.zip) and extract it. In the extrated folder use:
+Download the source code [here](https://github.com/pi-etro/quadLegas/archive/v1.1.zip) and extract it. In the extrated folder use:
 ```bash
 chmod +rx quadlegas.py
 ```
