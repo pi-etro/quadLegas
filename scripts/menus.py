@@ -1,20 +1,24 @@
 # menus.py
 # implementa os menus e entradas do usuario
 
-from scripts.common import clean_exit, clear, logo, lw
+from scripts.common import clear, logo, lw
 from scripts.colCod import colCod
 from scripts.colRa import colRa
-from scripts.data import importDef, load_dfs, endereco
+from scripts.data import load_dfs, endereco
 from pandas import DataFrame
 from os import path
+
+nquad1='2019.3'
+nquad2='2020.1'
+nquad3=''
+
+quad1='data/csv/2019.3.csv'
+quad2='data/csv/2020.1.csv'
+quad3=''
 
 # welcome e menu principal do programa
 def central():
     lw()
-
-    df_deferidas = DataFrame()
-    df_changed = False
-    df_nomeras = DataFrame()
 
     sel = 0
     while sel!='4':
@@ -22,68 +26,44 @@ def central():
         sel = input()
 
         if sel=='1':
-            if path.exists(endereco('data/csv/deferidas.csv')) and path.getsize(endereco('data/csv/deferidas.csv')) > 1:
-                df_deferidas, df_changed, df_nomeras = load_dfs(df_deferidas, df_changed, df_nomeras)
-                menu_colRa(df_deferidas, df_nomeras)
-            else:
-                print('Importe o pdf de matriculas!')
+            menu_colRa()
         elif sel=='2':
-            if path.exists(endereco('data/csv/deferidas.csv')) and path.getsize(endereco('data/csv/deferidas.csv')) > 1:
-                df_deferidas, df_changed, df_nomeras = load_dfs(df_deferidas, df_changed, df_nomeras)
-                menu_colCod(df_deferidas, df_nomeras)
-            else:
-                print('Importe o pdf de matriculas!')
-        elif sel=='3':
-            df_changed = menu_importar()
+            menu_colCod()
         else:
             print('Opcao invalida!')
-
     clear()
-    clean_exit()
     return
 
-# menu para importar pdf de matriculas
-def menu_importar():
-    logo()
-
-    print(  '                         Importar pdf de matriculas deferidas\n')
-    print(  '0 Voltar ao menu\n')
-
-    print(  'Entre com o endereco do pdf de matriculas deferidas')
-
-    invalid = True
-    while invalid:
-        print(':',end='')
-        ad = input()
-        if ad=='0':
-            lw()
-            return
-        if path.exists(ad):
-            if path.isfile(ad):
-                if ad[-4:].lower() == '.pdf':
-                    invalid = False
-                else:
-                    print('Arquivo nao eh um .pdf!')
-            else:
-                print('Endereco nao eh de um arquivo!')
-        else:
-            print('Endereco invalido!')
-
-    print('Importando...')
-    importDef(ad)
-    print('Importacao conluida')
-
-    input('Aperte ENTER para voltar ao menu')
-    lw()
-    return True
-
 # menu para listar colegas de uma lista de codigos
-def menu_colCod(df_deferidas, df_nomeras):
+def menu_colCod():
     logo()
 
     print(  '                 Descobrir colegas de turma com os codigos das turmas\n')
-    print(  '0 Voltar ao menu\n')
-
+    print(  '[1] ' + nquad1)
+    print(  '[2] ' + nquad2)
+    print(  '[0] Voltar ao menu\n')
+    
+    invalid = True
+    while invalid:
+        print(':',end='')
+        n=input()
+        if n=='0':
+            lw()
+            return
+        if n=='1':
+            quad = quad1
+        if n=='2':
+            quad = quad2
+        if (n.isdigit()):
+            invalid = False
+        else:
+            print('Entrada invalida!')
+    
+    df_deferidas = DataFrame()
+    df_nomeras = DataFrame()
+    
+    df_deferidas, df_nomeras = load_dfs(df_deferidas, df_nomeras, quad)
+    
     print(  'Quantas turmas deseja consultar?')
 
     invalid = True
@@ -101,7 +81,7 @@ def menu_colCod(df_deferidas, df_nomeras):
     c=0
     lista_cod = []
     while c!=int(n):
-        print(  'Entre com o codigo da %d turma' % (c+1))
+        print(  'Entre com o codigo da turma %d' % (c+1))
         print(':',end='')
         x = input()
         if x=='0':
@@ -149,16 +129,39 @@ def menu_colCod(df_deferidas, df_nomeras):
     colCod(df_deferidas, df_nomeras, lista_cod, ad)
     print('Planilha salva em: '+ad)
 
-    input('Aperte ENTER para voltar ao menu')
+    input('\nAperte ENTER para voltar ao menu')
     lw()
     return
 
 # menu para listar colegas nas mesmas turmas de ra
-def menu_colRa(df_deferidas, df_nomeras):
+def menu_colRa():
     logo()
 
     print(  '                          Descobrir colegas de turma por RA\n')
-    print(  '0 Voltar ao menu\n')
+    print(  '[1] ' + nquad1)
+    print(  '[2] ' + nquad2)
+    print(  '[0] Voltar ao menu\n')
+    
+    invalid = True
+    while invalid:
+        print(':',end='')
+        n=input()
+        if n=='0':
+            lw()
+            return
+        if n=='1':
+            quad = quad1
+        if n=='2':
+            quad = quad2
+        if (n.isdigit()):
+            invalid = False
+        else:
+            print('Entrada invalida!')
+    
+    df_deferidas = DataFrame()
+    df_nomeras = DataFrame()
+    
+    df_deferidas, df_nomeras = load_dfs(df_deferidas, df_nomeras, quad)
 
     print(  'Entre com seu RA')
 
@@ -213,6 +216,6 @@ def menu_colRa(df_deferidas, df_nomeras):
     colRa(df_deferidas, df_nomeras, ra, ad)
     print('Planilha salva em: '+ad)
 
-    input('Aperte ENTER para voltar ao menu')
+    input('\nAperte ENTER para voltar ao menu')
     lw()
     return
