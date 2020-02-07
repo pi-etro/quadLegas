@@ -14,13 +14,12 @@ quadLegas is a CLI Python application to find out your new UFABC classmates!
 ## Features
 
 <p align="center">
-  <img width="660" src="https://raw.githubusercontent.com/pi-etro/quadLegas/master/img/main_menu.gif">
+  <img width="660" src="https://raw.githubusercontent.com/pi-etro/quadLegas/master/img/new_menu.gif">
 </p>
 
 With quadLegas you can:
 * Generate a *csv* file with the names of all your classmates;
 * Generate a *csv* file with the names of all students in a class;
-* Import the enrollment document.
 
 ## Table of Contents
 
@@ -39,7 +38,6 @@ quadLegas uses Python 3 and the following Python libraries:
 * os (Python Standard Library)
 * [pandas](https://github.com/pandas-dev/pandas)
 * sys (Python Standard Library)
-* [tabula-py](https://github.com/chezou/tabula-py)
 
 ### Linux
 #### Standalone
@@ -55,7 +53,7 @@ And run with:
 #### Source code
 If you don't want the standalone version, install the libraries [mentioned](#Installation). You can install them with pip3:
 ```bash
-pip3 install colorama cryptography pandas tabula-py
+pip3 install colorama cryptography pandas
 ```
 Download the source code [here](https://github.com/pi-etro/quadLegas/archive/v1.0.zip) and extract it. In the extrated folder use:
 ```bash
@@ -71,11 +69,9 @@ I haven't tested quadLegas on other OS, but if you manage to install the Python 
 
 ## Usage
 
-First import the registration document (example [here](http://prograd.ufabc.edu.br/pdf/_matriculas_deferidas_pos_ajuste_2019_3.pdf)) in the menu option `3`. It may take a while to import the *pdf* file.
+After you started quadLegas, select option `1` to list all students who are in the same classes as you - enter your university ID (RA) and the path to the *csv* file (`/path/to/file.csv`) - or option `2` to list all students from one or more classes - enter the number of classes to consult, the code for each class and the path to the *csv* file.
 
-After importing the document you can select option `1` to list all students who are in the same classes as you - enter your university ID (RA) and the path to the *csv* file (`/path/to/file.csv`) - or option `2` to list all students from one or more classes - enter the number of classes to consult, the code for each class and the path to the *csv* file.
-
-In the output *csv* file, each column is a class with the class code as header, each row has the students' name or the university ID (RA) - in case quadLegas doesn't know the name associated with the ID.
+In the output *csv* file, each column each column corresponds to a class with the class code as header, each row has the students' name or the university ID (RA) - in case quadLegas doesn't know the name associated with the ID.
 
 Enter `0` any time to return to the menu and `4` to exit the menu and quit quadLegas.
 
